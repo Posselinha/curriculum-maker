@@ -15,6 +15,6 @@
 <nav class="navbar">
         <a href="index.php">Home</a>
         <a href="criar.php">Criar</a>
-        <a href="visualizar.php">Currículos</a>
+        <a href="curriculumList.php">Currículos</a>
         <a href="admin.html">Admin</a>
 </nav>

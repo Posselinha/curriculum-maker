@@ -5,7 +5,7 @@
     use Dompdf\Dompdf;
 
     $dompdf = new Dompdf();
-    $dompdf->loadHtml($curriculum);
+    $dompdf->loadHtml($_POST['curriculumHTML']);
     $dompdf->render();
     $dompdf->stream("curriculum.pdf", ["Attachment" => false]);
 

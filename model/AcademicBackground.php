@@ -13,6 +13,19 @@
             $this->startDate = $startDate;
             $this->endDate = $endDate;
         }
+
+        public function __toString(): string
+        {
+            $academicBackgroundHTML = 
+            "
+                <div class='academicBackground'>
+                    <h3> " . $this->startDate->format('Y') . " - " . (!is_null($this->endDate) ? $this->endDate->format('Y') : "Em Andamento") . " | $this->institution</h3>
+                    <p>$this->course</p>
+                </div>
+            ";
+
+            return $academicBackgroundHTML;
+        }
     }
 
 ?>

@@ -1,11 +1,11 @@
 <?php
-
+    include_once __DIR__ . "/model/main.php";
     
     $personalInformation = new PersonalInformation(
         "João Lorem Ipsum da Silva",
         "19123456789",
         "Porto Ferreira, São Paulo",
-        ""
+        null
     );
 
     $academicBackground =
@@ -46,3 +46,20 @@
 
     $curriculum = new Curriculum($personalInformation, null, null, $academicBackground, $professionalExperience, $skills, $coursesAndCertificates);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="meu-curriculum">
+        <?= $curriculum ?>
+    </div>
+
+    <button id="createPDF">Gerar PDF</button>
+
+    <script src="./js/getCurriculumHTML.js"></script>
+</body>
+</html>
