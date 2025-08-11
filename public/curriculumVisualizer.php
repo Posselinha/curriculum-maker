@@ -1,6 +1,7 @@
 <?php
-    include_once __DIR__ . "/model/main.php";
-    
+    include_once __DIR__ . "/../src/config.php";
+    use App\Models\{PersonalInformation, AcademicBackground, ProfessionalExperience, CoursesAndCertificates, Curriculum};
+
     $personalInformation = new PersonalInformation(
         "João Lorem Ipsum da Silva",
         "19123456789",
@@ -60,6 +61,6 @@
 
     <button id="createPDF">Gerar PDF</button>
 
-    <script src="./js/getCurriculumHTML.js"></script>
+    <script src="../src/JS/getCurriculumHTML.js"></script>
 </body>
 </html>

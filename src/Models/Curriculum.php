@@ -1,4 +1,5 @@
 <?php
+    namespace App\Models;
 
     class Curriculum {
         public PersonalInformation $personalInformation;

@@ -1,5 +1,7 @@
 <?php
-
+    namespace App\Models;
+    use DateTime;
+    
     class AcademicBackground {
         public string $course;
         public string $institution;

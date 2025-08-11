@@ -1,4 +1,6 @@
 <?php
+    namespace App\Models;
+    use DateTime;
 
     class ProfessionalExperience {
         public string $companyName;
