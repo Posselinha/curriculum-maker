@@ -1,5 +1,5 @@
 <?php
-    include_once __DIR__ . "/../src/config.php";
+    include_once __DIR__ . "/../src/Config/config.php";
     use App\Models\{PersonalInformation, AcademicBackground, ProfessionalExperience, CoursesAndCertificates, Curriculum};
 
     $personalInformation = new PersonalInformation(
